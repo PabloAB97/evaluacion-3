@@ -1,0 +1,54 @@
+body {
+    background: url('../static/fondo.jpg');
+    background-size: cover;
+}
+
+.container, .container-form{
+    background-color: white;
+    width: max-content;
+    height: 400px;
+    padding: 50px;
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 5px solid lightseagreen;
+}
+
+.container-2 {
+    background-color: white;
+    width: max-content;
+    height: 250px;
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 5px solid lightseagreen;
+}
+
+
+.e1, .e2{
+    background-color: orangered;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-size:18px;
+    border-radius: 30px;
+    color: white;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.btnenviar{
+    background-color: orangered;
+    color:white;
+    width: 120px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.btnenviar:hover {
+    transform: scale(1.1);
+}

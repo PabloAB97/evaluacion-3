@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <div class="container-2">
+        <form method="post" action="/ejercicio2">
+            <label for="nombre1">Nombre 1</label><br>
+            <input type="text" id="nombre1" name="nombre1"><br>
+            <label for="nombre2">Nombre 2</label><br>
+            <input type="text" id="nombre2" name="nombre2"><br>
+            <label for="nombre3">Nombre 3</label><br>
+            <input type="text" id="nombre3" name="nombre3"><br><br>
+            <input type="submit" value="Calcular" class="btnenviar">
+        </form>
+        {% if nombre1 is defined and nombre2 is defined and nombre3 is defined %}
+            {% if long1 > long2 and long1 > long3 %}
+                <p>Nombre más largo: {{ nombre1 }}</p>
+            {% elif long2 > long1 and long2 > long3 %}
+                <p>Nombre más largo: {{ nombre2 }}</p>
+            {% else %}
+                <p>Nombre más largo: {{ nombre3 }}</p>
+            {% endif %}
+        {% endif %}
+        <p><a href="{{ url_for('home') }}">Volver al menú</a></p>
+    </div>
+
+</body>
+</html>
